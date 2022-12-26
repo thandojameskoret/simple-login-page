@@ -1,8 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+- Create a new private repo on github.[Follow the instructions here.](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
+- Bare clone this repo  
+  `git clone --bare https://github.com/thandojameskoret/simple-login-page.git`
+- Mirror-push the cloned repo to the private repo you created in step 2  
+  `cd simple-login-page`  
+  `git push --mirror https://github.com/exampleuser/new-repository.git`
+- Remove the local repo you cloned in step 2  
+  `cd ..`  
+  `rm -rf simple-login-page`
+- Add [Thando James](https://github.com/thandojameskoret) as a reviewer
+
+To run the development server do the following:
 
 ```bash
 npm run dev
@@ -14,23 +23,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## Assignment
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- Create the following page as displayed [here.](https://simple-login-page-hazel.vercel.app/)
+- Add validation of the name, email and password inputs for when a user clicks the create account button. The validation should not only check if the fields populated but also if the email is a valid email and if the password created adheres to the [Muhlenberg password guidelines](https://www.muhlenberg.edu/offices/oit/about/policies_procedures/strong-passwords.html)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Submission
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Create a separate branch from the main branch with your changes and create a pull request with the above reviewers.
